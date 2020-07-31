@@ -1,13 +1,18 @@
 <template>
-  <div class="x-button">
+  <button @click="handleClick">
     <slot></slot>
-  </div>
+  </button>
 </template>
 <script>
 export default {
   name:'x-button',
   props:{
     type: String
+  },
+  methods:{
+    handleClick(){
+      console.log('hello world!')
+    }
   }
 }
 </script>
